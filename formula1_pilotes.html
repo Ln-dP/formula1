@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>pilotes</title>
+</head>
+
+<style>
+@font-face {
+    font-family: formula1;
+    src: url('fonts/Formula1.ttf') format('truetype');
+}
+body{
+background-color: black;
+	 margin: 0;
+	padding: 0;
+	font-family: formula1, wide;
+	color : white;
+	display: block;
+}
+.div1{
+width:100%;
+height:100%;
+display: block;
+padding: 0% 4%;
+}
+.image1 {
+position: relative;
+display: inline-block;
+padding: 2% 2%;
+}
+.image-text {
+position: absolute;
+bottom: 15%;
+left: 50%;
+transform: translate(-50%, -50%);
+padding: 5px 10px;
+display: none;
+font-size:18;
+color:black;
+text-align:center;
+}
+.image1:hover
+.image-text {
+display: block;
+}
+.navbar {
+	background-color: red;
+  }
+tr:hover {background-color: grey;}
+
+/* On réinitialise les valeurs par défaut du menu */
+  .main-menu,
+  .sub-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  /* On positionne les éléments du menu en ligne */
+  .main-menu li {
+	display: inline-block;
+	position: relative;
+  }
+  
+  /* On stylise les liens du menu */
+  .main-menu li a {
+	display: block;
+	padding: 15px 30px;
+	color: black;
+	text-decoration: none;
+  }
+  
+  /* 
+  	On affiche les sous-menu au survol
+  	Cette propriété s'applique à tout les éléments descendants de .main-menu (donc le premier et deuxième sous-menu)
+  */
+  .main-menu li:hover > .sub-menu {
+	display: block;
+  }
+  
+  /* On positionne les sous-menus en absolu pour les superposer au menu principal */
+  .sub-menu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #444;
+	width:220px;
+  }
+  
+  .sub-menu li {
+	display: block;
+	width:190px;
+  }
+  
+  .sub-menu li a {
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  /* On positionne le deuxième sous-menu à droite du premier */
+  .sub-menu .sub-menu {
+	top: 0;
+	left: 100%;
+  }
+.sub-menu li a:hover {background-color: grey; width:180px;}
+a{
+color : white;
+text-decoration :none;
+display: block; 
+width: 100%; 
+height: 100%;
+}
+.a2{
+color:red;
+}
+.title{
+text-align:center;
+font-size:30px;
+}
+.title:hover{background:black;}
+
+.image{
+width:400px;
+border-radius:10px;
+}
+
+</style>
+
+<body>
+<nav class="navbar">
+    <ul class="main-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="formula1_pilotes.html">Ecuries / Pilotes</a>
+        <ul class="sub-menu">
+          <li>
+			<a href="formula1_pilotes_redbull.html">Red Bull</a>
+			<a href="formula1_pilotes_ferrari.html">Ferrari</a>
+			<a href="formula1_pilotes_mclaren.html">McLaren</a>
+			<a href="formula1_pilotes_mercedes.html">Mercedes</a>
+			<a href="formula1_pilotes_astonmartin.html">Aston Martin</a>
+			<a href="formula1_pilotes_racingbulls.html">Racing Bulls</a>
+			<a href="formula1_pilotes_haas.html">Haas F1 Team</a>
+			<a href="formula1_pilotes_williams.html#">Williams</a>
+			<a href="formula1_pilotes_kicksauber.html">Kick Sauber</a>
+			<a href="formula1_pilotes_alpine.html">Alpine</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Résultats 2024</a>
+		<ul class="sub-menu">
+          <li>
+			<a href="#">Bahrain GP</a>
+			<a href="#">Saudi Arabian GP</a>
+			<a href="#">Australian GP</a>
+			<a href="#">Japanese GP</a>
+			<a href="#">Chinese GP</a>
+			<a href="#">Miami GP</a>
+			<a href="#">Emilia Romagna GP</a>
+			<a href="#">Monaco GP</a>
+          </li>
+        </ul>
+	  </li>
+    </ul>
+  </nav>
+    <img src="https://i.goopics.net/dydnku.jpg" width="100%"/>
+<div class="div1">
+<div class="image1">
+<a href="formula1_pilotes_redbull.html"><img src="https://i.ibb.co/54WKKrj/mbib4l.jpg"class="image"><span class="image-text" style="background-color:#252D59">Red Bull</span></a>
+</div>
+<div class="image1">
+<a href="formula1_pilotes_ferrari.html"><img src="https://i.ibb.co/YLgRDZk/capture-decran-2022-02-10-121600-510x410.png"class="image"><span class="image-text" style="background-color:red"
+>Ferrari</span></a>
+</div>
+<div class="image1">
+<a href="formula1_pilotes_mclaren.html"><img src="https://i.goopics.net/n5f4kh.jpg"class="image"><span class="image-text" style="background-color:#F27127">Mc Laren</span></a>
+</div>
+<div class="image1">
+<a href="formula1_pilotes_mercedes.html"><img src="https://i.goopics.net/1o9d7c.jpg"class="image"><span class="image-text" style="background-color:#06BF8B">Mercedes</span></a>
+</div>
+<div class="image1">
+<a href="formula1_pilotes_astonmartin.html"><img src="https://i.goopics.net/xejaxj.jpg"class="image"><span class="image-text" style="background-color:#00665F">Aston Martin</span></a>
+</div>
+<div class="image1">
+<a href="formula1_pilotes_racingbulls.html"><img src="https://i.goopics.net/alxah6.png"class="image"><span class="image-text" style="background-color:#292Bbb">Racing Bulls</span></a>
+</div>
+<div class="image1">
+<a href="formula1_pilotes_haas.html"><img src="https://i.goopics.net/jaxm33.jpg"class="image"><span class="image-text" style="background-color:#BFBFBF">Haas F1 Team</span></a>
+</div>
+<div class="image1">
+<a href="formula1_pilotes_williams.html"><img src="https://i.goopics.net/2xk4go.jpg"class="image"><span class="image-text" style="background-color:#63CAF2">Williams</span></a>
+</div>
+<div class="image1">
+<a href="formula1_pilotes_kicksauber.html"><img src="https://i.goopics.net/3igjtv.jpg"class="image"><span class="image-text" style="background-color:#04BF33">Kick Sauber</span></a>
+</div>
+<div class="image1">
+<a href="formula1_pilotes_alpine.html"><img src="https://i.goopics.net/r314g6.jpg"class="image"><span class="image-text" style="background-color:#FF7EE9">Alpine</span></a>
+</div>
+</div>
+</body>
+</html>

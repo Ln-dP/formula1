@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formula 1</title>
+  <link rel="stylesheet" href="formula_1.css">
+
+  </head>
+ <style>
+@font-face {
+    font-family: formula1;
+    src: url('fonts/Formula1.ttf') format('truetype');
+}
+
+/* Styles généraux */
+body {
+	background-color: black;
+    margin: 0;
+	padding: 0;
+	font-family: formula1, wide;
+	color : white;
+	display: block;
+  }
+
+  .navbar {
+	background-color: #BFBFBF;
+  }
+
+  /* On réinitialise les valeurs par défaut du menu */
+  .main-menu,
+  .sub-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  /* On positionne les éléments du menu en ligne */
+  .main-menu li {
+	display: inline-block;
+	position: relative;
+  }
+  
+  /* On stylise les liens du menu */
+  .main-menu li a {
+	display: block;
+	padding: 15px 30px;
+	color: black;
+	text-decoration: none;
+  }
+  
+  /* 
+  	On affiche les sous-menu au survol
+  	Cette propriété s'applique à tout les éléments descendants de .main-menu (donc le premier et deuxième sous-menu)
+  */
+  .main-menu li:hover > .sub-menu {
+	display: block;
+  }
+  
+  /* On positionne les sous-menus en absolu pour les superposer au menu principal */
+  .sub-menu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #444;
+	width:220px;
+  }
+  
+  .sub-menu li {
+	display: block;
+	width:190px;
+  }
+  
+  .sub-menu li a {
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  /* On positionne le deuxième sous-menu à droite du premier */
+  .sub-menu .sub-menu {
+	top: 0;
+	left: 100%;
+  }
+.sub-menu li a:hover {background-color: grey; width:180px;}
+
+a{
+color : white;
+text-decoration :none;
+display: block; width: 100%; height: 100%;
+}
+
+h1{
+color:#BFBFBF;
+padding:20px;
+margin-top:0;
+margin-bottom:0;
+font-size:60px;
+}
+
+h2{
+margin-top:2px;
+}
+
+h5{
+font-size:18px;
+text-align:center;
+margin-bottom:0px;
+}
+
+p{
+ margin-top:0px;
+ margin-bottom:5px;
+}
+
+.div1{
+display:flex;
+}
+
+.div2{
+padding:20px;
+}
+
+.div_pilote{
+display:flex;
+}
+
+.profil{
+width:200px;
+padding:10px;
+}
+
+  table {
+	margin-left: 20px;
+	border: 1px solid #BFBFBF;
+	border-radius: 10px;
+	border-spacing: 0.5px;
+	width: 100%;
+	margin-bottom:20px;
+	margin-top:15px;
+}
+.transparent{
+	border: 0px;
+
+}
+ td{
+	padding:5px;
+}
+th{
+font-size:20px;
+
+}
+
+.noir{
+color:black;
+}
+
+.padding{
+padding:10px;
+}
+
+</style>
+<body>
+  <nav class="navbar">
+    <ul class="main-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="formula1_pilotes.html">Ecuries / Pilotes</a>
+        <ul class="sub-menu">
+          <li>
+		    <a href="formula1_pilotes_redbull.html">Red Bull</a>
+			<a href="formula1_pilotes_ferrari.html">Ferrari</a>
+			<a href="formula1_pilotes_mclaren.html">McLaren</a>
+			<a href="formula1_pilotes_mercedes.html">Mercedes</a>
+			<a href="formula1_pilotes_astonmartin.html">Aston Martin</a>
+			<a href="formula1_pilotes_racingbulls.html">Racing Bulls</a>
+			<a href="formula1_pilotes_haas.html">Haas F1 Team</a>
+			<a href="formula1_pilotes_williams.html#">Williams</a>
+			<a href="formula1_pilotes_kicksauber.html">Kick Sauber</a>
+			<a href="formula1_pilotes_alpine.html">Alpine</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Résultats 2024</a>
+		<ul class="sub-menu">
+          <li>
+			<a href="#">Bahrain GP</a>
+			<a href="#">Saudi Arabian GP</a>
+			<a href="#">Australian GP</a>
+			<a href="#">Japanese GP</a>
+			<a href="#">Chinese GP</a>
+			<a href="#">Miami GP</a>
+			<a href="#">Emilia Romagna GP</a>
+			<a href="#">Monaco GP</a>
+          </li>
+        </ul>
+	  </li>
+    </ul>
+  </nav>
+<div class="div1">
+<img src="https://i.ibb.co/stYvd7H/temp-Imagej-Od-LYK.jpg" width="330px">
+	<div class="div2">
+	<h1>HAAS F1 TEAM</h1>
+	<table>
+		<tr>
+			<td><img src="https://i.ibb.co/MsB7K0v/temp-Image-IJrhza.jpg" alt="temp-Imagef8-Zs-VX" class="profil"> </td>
+			<td>	<h2>Nico HULKENBERG</h2><p>Age : 36</p><p>Nationalité : Allemand</p><p>Numéro : 27</p><p>Meilleur classement : P4 (x3)</p><p>Podiums : 0</p><p>Points : 534</p></td>
+			<td><img src="https://i.ibb.co/qCQfNPq/temp-Image-Ho6ki-T.jpg" class="profil"></td>
+			<td>	<h2>Kevin MAGNUSSEN</h2><p>Age : 31</p><p>Nationalité : Danois</p><p>Numéro : 20</p><p>Meilleur classement : P2 (x1)</p><p>Podiums : 1</p><p>Points : 187</p></td>
+		</tr>
+				<tr>
+			<td colspan="4"><p  class="noir">...</p></td>
+		</tr>
+		<tr>
+		<th colspan="2">Résultats 2024</th>
+		<th colspan="2">Résultats 2024</th>
+		</tr>
+		<tr>
+			<td colspan="2"><table class="transparent"><tr><td>Bahrain GP</td><td>P14</td></tr><tr><td>Saudi Arabian GP</td><td>P14</td></tr><tr><td>Australian GP</td><td>P7</td></tr><tr><td>Japanese GP</td><td>P10</td></tr><tr><td>Chinese GP</td><td>DNF</td></tr><tr><td>Miami GP</td><td>P1</td></tr><tr><td>Emilia Romagna GP</td><td>P1</td></tr><tr><td>Monaco GP</td><td>P1</td></tr></table></td>
+			<td colspan="2"><table class="transparent"><tr><td>Bahrain GP</td><td>P12</td></tr><tr><td>Saudi Arabian GP</td><td>P12</td></tr><tr><td>Australian GP</td><td>P10</td></tr><tr><td>Japanese GP</td><td>P13</td></tr><tr><td>Chinese GP</td><td>P16</td></tr><tr><td>Miami GP</td><td>P4</td></tr><tr><td>Emilia Romagna GP</td><td>P4</td></tr><tr><td>Monaco GP</td><td>P4</td></tr></table></td>
+		</tr>
+	</table>
+	</div>
+</div>
+</body>
+</html>

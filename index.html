@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formula 1</title>
+  <link rel="stylesheet" href="formula_1.css">
+
+  </head>
+ <style>
+@font-face {
+    font-family: formula1;
+    src: url('fonts/Formula1.ttf') format('truetype');
+}
+
+/* Styles généraux */
+body {
+	background-color: black;
+    margin: 0;
+	padding: 0;
+	font-family: formula1, wide;
+	color : white;
+	display: block;
+  }
+  
+  table {
+	margin-left: 20px;
+	border: 1px solid red;
+	border-radius: 10px;
+	border-spacing: 0.5px;
+	width: 100%;
+	margin-bottom:20px;
+	margin-top:15px;
+}
+ th, td{
+	padding:5px;
+}
+tr:hover {background-color: grey;}
+
+  .navbar {
+	background-color: red;
+  }
+
+.tr1:hover{background-color: black;}
+
+  /* On réinitialise les valeurs par défaut du menu */
+  .main-menu,
+  .sub-menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  /* On positionne les éléments du menu en ligne */
+  .main-menu li {
+	display: inline-block;
+	position: relative;
+  }
+  
+  /* On stylise les liens du menu */
+  .main-menu li a {
+	display: block;
+	padding: 15px 30px;
+	color: black;
+	text-decoration: none;
+  }
+  
+  /* 
+  	On affiche les sous-menu au survol
+  	Cette propriété s'applique à tout les éléments descendants de .main-menu (donc le premier et deuxième sous-menu)
+  */
+  .main-menu li:hover > .sub-menu {
+	display: block;
+  }
+  
+  /* On positionne les sous-menus en absolu pour les superposer au menu principal */
+  .sub-menu {
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	background-color: #444;
+	width:220px;
+  }
+  
+  .sub-menu li {
+	display: block;
+	width:190px;
+  }
+  
+  .sub-menu li a {
+	padding: 10px 20px;
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  /* On positionne le deuxième sous-menu à droite du premier */
+  .sub-menu .sub-menu {
+	top: 0;
+	left: 100%;
+  }
+.sub-menu li a:hover {background-color: grey; width:180px;}
+
+.image{
+width:100%;
+}
+
+.div1{
+display : flex;
+}
+
+a{
+color : white;
+text-decoration :none;
+display: block; width: 100%; height: 100%;
+}
+.a2{
+color:red;
+}
+
+.div2{
+display :block;
+margin-left:40px;
+width:43%;
+}
+
+.divtab{
+width:50%;
+display :block;
+}
+
+h1, h2{
+text-align:center;
+margin-top:0px;
+margin-bottom:0px;
+color:red;
+}
+
+h2{
+margin-bottom:10px;
+}
+
+h5{
+font-size:18px;
+text-align:center;
+margin-bottom:0px;
+}
+
+p{
+ text-align:center;
+}
+
+.podium{
+width:100%;
+padding:1%;
+}
+
+.divpod{
+width:30%;
+padding :2%;
+}
+
+.title{
+text-align:center;
+font-size:30px;
+}
+
+.title:hover{background:black;}
+
+</style>
+  <body>
+  <nav class="navbar">
+    <ul class="main-menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="formula1_pilotes.html">Ecuries / Pilotes</a>
+        <ul class="sub-menu">
+          <li>
+			<a href="formula1_pilotes_redbull.html">Red Bull</a>
+			<a href="formula1_pilotes_ferrari.html">Ferrari</a>
+			<a href="formula1_pilotes_mclaren.html">McLaren</a>
+			<a href="formula1_pilotes_mercedes.html">Mercedes</a>
+			<a href="formula1_pilotes_astonmartin.html">Aston Martin</a>
+			<a href="formula1_pilotes_racingbulls.html">Racing Bulls</a>
+			<a href="formula1_pilotes_haas.html">Haas F1 Team</a>
+			<a href="formula1_pilotes_williams.html#">Williams</a>
+			<a href="formula1_pilotes_kicksauber.html">Kick Sauber</a>
+			<a href="formula1_pilotes_alpine.html">Alpine</a>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">Résultats 2024</a>
+		<ul class="sub-menu">
+          <li>
+			<a href="#">Bahrain GP</a>
+			<a href="#">Saudi Arabian GP</a>
+			<a href="#">Australian GP</a>
+			<a href="#">Japanese GP</a>
+			<a href="#">Chinese GP</a>
+			<a href="#">Miami GP</a>
+			<a href="#">Emilia Romagna GP</a>
+			<a href="#">Monaco GP</a>
+          </li>
+        </ul>
+	  </li>
+    </ul>
+  </nav>
+    <img src="https://i.goopics.net/dydnku.jpg" width="100%"/>
+  <h5></h5>
+<div class=div1>
+	<div class="divtab">
+	<h1>CLASSEMENT GENERAL</h1>
+	<table border>
+		<tr class = tr1 style="height:20px">
+			<td></td>
+			<th style="width:50%">Pilote</th>
+			<th style="width:30%">Ecurie</th>
+			<th>Points</th>
+			<th>Victoires</th>
+			<th>Podiums</th>
+		</tr>
+		<tr>
+			<td><a href="formula1_pilotes_redbull.html">1</a></td>
+			<td> <a href="formula1_pilotes_redbull.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAGFBMVEX///+uHCghRouwHyzhr7OxvdQlSo6uGiaD9yJXAAAAk0lEQVR4nO3PgQ2DAAzAsA42+P9jnphEVNkXJPNZYt4O+BcjNUZqjNQYqTFSY6TGSI2RGiM1RmqM1BipMVJjpMZIjZEaIzVGaozUGKmZe4k5l5jvEgMAAAAAAAAAwOt+S8y1xBxLGKkxUmOkxkiNkRojNUZqjNQYqTFSY6TGSI2RGiM1RmqM1BipMVJjpMZIjZGaBzgxd4kmpHW3AAAAAElFTkSuQmCC" width=20px/> M. Verstappen</a></td>
+			<td><a href="formula1_pilotes_redbull.html">Red Bull</a></td>
+			<td class = center><a href="formula1_pilotes_redbull.html">110</a></td>
+			<td class = center><a href="formula1_pilotes_redbull.html">4</a></td>
+			<td class = center><a href="formula1_pilotes_redbull.html">4</a></td>
+		</tr>
+		<tr>
+			<td><a href="formula1_pilotes_redbull.html">2</a></td>
+			<td><a href="formula1_pilotes_redbull.html"><img src="data:image/png;base64,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" width=20px/> S. Pérez</a></td>
+			<td><a href="formula1_pilotes_redbull.html">Red Bull</a></td>
+			<td class = center><a href="formula1_pilotes_redbull.html">85</a></td>
+			<td class = center><a href="formula1_pilotes_redbull.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_redbull.html">4</a></td>
+		</tr>
+		<tr>
+			<td><a href="formula1_pilotes_ferrari.html">3</a></td>
+			<td><a href="formula1_pilotes_ferrari.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAADACAMAAAAN8R4NAAAAD1BMVEX////OESbMABLYY2f1293EiCs6AAAAoklEQVR4nO3PCRGAAAzAsPH414wLOLpEQTvHMvN1wNsM1xmuM1xnuM5wneE6w3WG6wzXGa4zXGe4znCd4TrDdYbrDNcZrjNcZ7jOcJ3hOsN1husM1xmuM1xnuM5wneE6w3WG6wzXGa4zXGe4znCd4TrDdYbrDNcZrjNcZ7jOcJ3hujmXmWuZuZcZAAAAAAAAAAAAAAAAAAAAAAAAAAAAgH97AMmLYJE2+wj7AAAAAElFTkSuQmCC" width=20px/> C. Leclerc</a></td>
+			<td><a href="formula1_pilotes_ferrari.html">Ferrari</a></td>
+			<td class = center><a href="formula1_pilotes_ferrari.html">76</a></td>
+			<td class = center><a href="formula1_pilotes_ferrari.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_ferrari.html">2</a></td>
+		</tr>
+		<tr>
+			<td><a href="formula1_pilotes_ferrari.html">4</a></td>
+			<td><a href="formula1_pilotes_ferrari.html"><img src="data:image/png;base64,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" width=20px/> C. Sainz Jr.</a></td>
+			<td><a href="formula1_pilotes_ferrari.html">Ferrari</a></td>
+			<td class = center><a href="formula1_pilotes_ferrari.html">69</a></td>
+			<td class = center><a href="formula1_pilotes_ferrari.html">1</a></td>
+			<td class = center><a href="formula1_pilotes_ferrari.html">3</a></td>
+		</tr>
+		<tr>
+			<td><a href="formula1_pilotes_mclaren.html">5</a></td>
+			<td><a href="formula1_pilotes_mclaren.html"><img src="data:image/png;base64,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" width=20px/> L. Norris</a></td>
+			<td><a href="formula1_pilotes_mclaren.html">McLaren</a></td>
+			<td class = center><a href="formula1_pilotes_mclaren.html">58</a></td>
+			<td class = center><a href="formula1_pilotes_mclaren.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_mclaren.html">2</a></td>
+		</tr>
+				<tr>
+			<td><a href="formula1_pilotes_mclaren.html">6</a></td>
+			<td><a href="formula1_pilotes_mclaren.html"><img src="data:image/png;base64,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" width=20px/> O. Piastri</a></td>
+			<td><a href="formula1_pilotes_mclaren.html">McLaren</a></td>
+			<td class = center><a href="formula1_pilotes_mclaren.html">38</a></td>
+			<td class = center><a href="formula1_pilotes_mclaren.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_mclaren.html">0</a></td>
+		</tr>
+				<tr>
+			<td><a href="formula1_pilotes_mercedes.html">7</a></td>
+			<td><a href="formula1_pilotes_mercedes.html"><img src="data:image/png;base64,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" width=20px/> G. Russel</a></td>
+			<td><a href="formula1_pilotes_mercedes.html">Mercedes</a></td>
+			<td class = center><a href="formula1_pilotes_mercedes.html">33</a></td>
+			<td class = center><a href="formula1_pilotes_mercedes.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_mercedes.html">0</a></td>
+		</tr>
+				<tr>
+			<td><a href="formula1_pilotes_astonmartin.html">8</a></td>
+			<td><a href="formula1_pilotes_astonmartin.html"><img src="data:image/png;base64,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" width=20px/> F. Alonzo</a></td>
+			<td><a href="formula1_pilotes_astonmartin.html">Aston Martin</a></td>
+			<td class = center><a href="formula1_pilotes_astonmartin.html">31</a></td>
+			<td class = center><a href="formula1_pilotes_astonmartin.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_astonmartin.html">0</a></td>
+		</tr>
+				<tr>
+			<td><a href="formula1_pilotes_mercedes.html">9</a></td>
+			<td><a href="formula1_pilotes_mercedes.html"><img src="data:image/png;base64,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" width=20px/> L. Hamilton</a></td>
+			<td><a href="formula1_pilotes_mercedes.html">Mercedes</a></td>
+			<td class = center><a href="formula1_pilotes_mercedes.html">19</a></td>
+			<td class = center><a href="formula1_pilotes_mercedes.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_mercedes.html">0</a></td>
+		</tr>
+				<tr>
+			<td><a href="formula1_pilotes_astonmartin.html">10</a></td>
+			<td><a href="formula1_pilotes_astonmartin.html"><img src="data:image/png;base64,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" width=20px/> L. Stroll</a></td>
+			<td><a href="formula1_pilotes_astonmartin.html">Aston Martin</a></td>
+			<td class = center><a href="formula1_pilotes_astonmartin.html">9</a></td>
+			<td class = center><a href="formula1_pilotes_astonmartin.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_astonmartin.html">0</a></td>
+		</tr>
+				<tr>
+			<td><a href="formula1_pilotes_racingbulls.html">11</a></td>
+			<td><a href="formula1_pilotes_racingbulls.html"><img src="data:image/jpeg;base64,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" width=20px/> Y. Tsunoda</a></td>
+			<td><a href="formula1_pilotes_racingbulls.html">RB</a></td>
+			<td class = center><a href="formula1_pilotes_racingbulls.html">7</a></td>
+			<td class = center><a href="formula1_pilotes_racingbulls.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_racingbulls.html">0</a></td>
+		</tr>
+		<tr>
+			<td><a href="formula1_pilotes_ferrari.html">12</a></td>
+			<td><a href="formula1_pilotes_ferrari.html"><img src="data:image/png;base64,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" width=20px/> O. Bearman</a></td>
+			<td><a href="formula1_pilotes_ferrari.html">Ferrari</a></td>
+			<td class = center><a href="formula1_pilotes_ferrari.html">6</a></td>
+			<td class = center><a href="formula1_pilotes_ferrari.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_ferrari.html">0</a></td>
+		</tr>
+		<tr>
+			<td><a href="formula1_pilotes_haas.html">13</a></td>
+			<td><a href="formula1_pilotes_haas.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASIAAACuCAMAAAClZfCTAAAAElBMVEUAAAD/zgDdAADnAADaAAD/2AAtsSEoAAAA+ElEQVR4nO3QMQGAMAAEsYeCf8tIuI0pkZANAAAAAAAAAAAAAAAAAAAAgB8dwm6CoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKewh7CbsIipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUqKkqKkKClKipKipCgpSoqSoqQoKUofMGTNC8HkSxoAAAAASUVORK5CYII=" width=20px/> N. Hülkenberg</a></td>
+			<td><a href="formula1_pilotes_haas.html">Haas</a></td>
+			<td class = center><a href="formula1_pilotes_haas.html">4</a></td>
+			<td class = center><a href="formula1_pilotes_haas.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_haas.html">0</a></td>
+		</tr>
+		<tr>
+			<td><a href="formula1_pilotes_haas.html">14</a></td>
+			<td><a href="formula1_pilotes_haas.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQIAAADDCAMAAABeUu/HAAAALVBMVEXIEC7////GACDgkpnHACTZdX/ptLnFABrFABHYb3rosbfEAADfj5fy1NfejJQw/3xHAAABYklEQVR4nO3ay01DQRREwdM2mD/5hwsJ4I0fEhZ1EuhRbe/U4T087ucuT8cP/r0QIEAQghCEIAQhCEEIQhCCEIQgBCEIQQhCEIIQhCAEIQhBCEIQghCEIAQhCEEIQhCCEIQgBCEIQQhCEIIQhCAEIQhBCEIQghCEIAQhCEEIQhCCEIQgBCEIQQhCEIIQhCAEIQhBCEIQghCEIAQh6A4JTof3/HKF4PXt+MEb63x475crBB+fxw/eWFee+09CgADBEAzBEAzBEAzBEAzBEAzBEAzBEAzBEAzBEAzBEAzBEAzBEHznpnh2WT79wrn+7v4XHB8CBAhCEIIQhCAEIQhBCEIQghCEIAQhCEEIQhCCEIQgBCEIQQhCEIIQhCAEIQhBCEIQghCEIAQhCEEIQhCCEIQgBCEIQQhCEIIQhCAEIQhBCEIQghCEIAQhCEEIQhCCEIQgBCEIQQhCEIIQhCAE3R/BF+GGRIscpa+NAAAAAElFTkSuQmCC" width=20px/> K. Magnussen</a></td>
+			<td><a href="formula1_pilotes_haas.html">Haas</a></td>
+			<td class = center><a href="formula1_pilotes_haas.html">1</a></td>
+			<td class = center><a href="formula1_pilotes_haas.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_haas.html">0</a></td>
+		</tr>
+		<tr>
+			<td><a href="formula1_pilotes_williams.html">15</a></td>
+			<td><a href="formula1_pilotes_williams.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAKlBMVEXnFy0LJXr////+//8AAHT//f8KJXznABv0nKL6/v3ynqTnAB7lGiwKJHwrkEt3AAABS0lEQVR4nO3cWWrDMBRA0ZcO7pTsf7stpWnh3a4gOcfGGGH9XPQnrBkAAAAAAAAA7tKZbV7Y5pVtHtnmgU2T0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTco+YFknpUnNG9s8sc2JTZOag806KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNKk5TrmuL6c98M83tzhtjsvxdX8/jsvl+nr5Hb0O/Az9fXu70/xfXM4rKGfClPNPSpOaZzbrpDQpTUqT0qQ0KU1Kk9KkNClNSpPSpDQpTUqT0qQ0KU1Kk9KkNClNSpOy51X20Gve2eaDbc5sAwAAAAAAAMBd+gRUiTHJV1M2jAAAAABJRU5ErkJggg==" width=20px/> A. Albon</a></td>
+			<td><a href="formula1_pilotes_williams.html">Williams</a></td>
+			<td class = center><a href="formula1_pilotes_williams.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_williams.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_williams.html">0</a></td>
+		</tr>
+		<tr>
+			<td><a href="formula1_pilotes_alpine.html">16</a></td>
+			<td><a href="formula1_pilotes_alpine.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAFVBMVEX///8AJlTOESYAD0l1fJDddnzMAA+H1ew7AAAAiUlEQVR4nO3PRxEAIAADsDL9S0ZEf1ziIBmttVM7d7YiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiLyaeQBbt9uqjGyZV0AAAAASUVORK5CYII=" width=20px/> E. Ocon</a></td>
+			<td><a href="formula1_pilotes_alpine.html">Alpine</a></td>
+			<td class = center><a href="formula1_pilotes_alpine.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_alpine.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_alpine.html">0</a></td>
+		</tr>
+		<tr>
+			<td><a href="formula1_pilotes_kicksauber.html">17</a></td>
+			<td><a href="formula1_pilotes_kicksauber.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARMAAAC3CAMAAAAGjUrGAAAAjVBMVEXuHCX//wDtACb71A7uEyXuACXuDSb//QD84QvwQyL83AzyZR/zexzwSyHvNSP70A/vLyP+8QX+9wLxUyD97Qf3phfyXx/vJST3rhX+7gf72A3zbx72oRf5vRP4shX5wxL2mRn0gxv1kRrzdx3yaR74sRX6yhD0ixv95gn2mxj3pRf5wRLwRSL1khjxVyCBnvfJAAAEoUlEQVR4nO3ca3OiMBgF4OYY4v2GClq1ttaqvf7/n7cBROxqlVCtEM/zZaez0w4c8obc9O6OiIiIiG6cuvYF5A8anrz2NeTFpnmopmgxk4g/d6CzkH5ZONe+lrzAgxi2oJyRKOPa15IbcIVoe/dC9JlJTI1FpMZMtlCKMlnrErr2tVxY6peI7GwaiiiNYXVbkb20oaAuttxJ66JXdV2YphyCqWoSSXf22LR4kAL3IVUdSN/dBDJ77gCwOBLZE91UmaiurphlTWfSszmPAIZCpCkDZzZbVYGWzsT6oT304x+kaShRuWAgxMWv6cpkU5gNTOGWbZ/uBM89XfFsqLH10x30g0zeTBrK0PJMZDTmMJrVyR9/sAMm0ZAj66vEr9o388E6ymSSsR4wasXLb7a0GBkP19dZM7kvd4JQFBZ1S0LBazyByVg8mArXVwpeTdjS86ISZ/KY7ZbwqOeDqq5H/E+WZJIsiIhKtlvarr1Zsx6Jz2T238lUPIhTHdvy/kEtyeQzw4NWaKwLvUSLfTKJRN/VvuPPXicy2paeU8S3jpzWSv+r7GQi2vv/vToWilq5O7+dsT+6Mv3aNNQ4fp+y2Xhb9gseyvhYAHsqnVN3KZWur6CbHnVFUbsU+LVTQSQG6RYYw5dxC743fy/mfFnGU76TXC/lDcoPIaYIOtzC7vig554ORPe3MvVwwxHCL+I7Z4dylqcjmRutRabbCsk1PJ1IZFQ1uUnc+xe71L+D1vpYJFOzDXJZLXjlRCQefo7k2bQSrIhEw6J8OJGKX/zOISvclQ5FMrF91/MoLA5EYv3OzXGYHexMbFkFyQQHu5PZLTcUdXg+eNPFg/fD7x1rlhAzwA/v4mmWFcjzX941qPrhSLIUj8qykptD39bcXts7P9SNnzr65r+TR0hWDLo97G5pmBePL95taCjK22awdPRDxkc3/tk1vT/1JKz4nEYyB9zsaKqkmDzDQggGfw0LiicunXVr2yrwvMkk/QqRjDaB9N8q6X8c5Xcuc7V/Qn5Ft/+yO+NDJ9rtSXdYNvgri5fhw/sy7KC7XbesE77I1f4NvISv3cX3u5d4C0P5Sn38fqdrDhtYkefUwZFYcX+31yDgBTWVfksCnZ29kRMbZDkXHol9PPRUlWobFE/QtOabRPpGa7j5g6HoNn+4BayMDstuF7xTncTOMbizn5ehUe2a7E3EyzDGw5p8kc3VsRvQXa3BaCN4E7u1THOCXDm1x2fwyIO3esUPDrXd9GrUNxjoCZIMd4yK3U7OCP2oDiUGR8/v3BK/F5cMbNghPY8iD13PilWyBxYcrjgzvBqM/i1XleHoF/WCHnG8CHfmAaqlp9TMZCPY/xhNOn0hlswktl2zzbIxZqt4GbfyZfW3FRhJdg/7kw5TCe18BEo3Fls+//c72H40pdye23Hc8bcQnzaefdn99SfphWf1R5XCL9GfkWqI9mcVTvnWT73tkJ4TFEywh1rwtdcz2nQguldJ/UVdN0OKD2byH6yYyR72JkRERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERERPTdP2HeKXnQ7ez5AAAAAElFTkSuQmCC" width=20px/> G.Y. Zhou</a></td>
+			<td><a href="formula1_pilotes_kicksauber.html">Kick Sauber</a></td>
+			<td class = center><a href="formula1_pilotes_kicksauber.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_kicksauber.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_kicksauber.html">0</a></td>
+		</tr>
+		<tr>
+			<td><a href="formula1_pilotes_racingbulls.html">18</a></td>
+			<td><a href="formula1_pilotes_racingbulls.html"><img src="data:image/png;base64,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" width=20px/> D. Ricciardo</a></td>
+			<td><a href="formula1_pilotes_racingbulls.html">RB</a></td>
+			<td class = center><a href="formula1_pilotes_racingbulls.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_racingbulls.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_racingbulls.html">0</a></td>
+		</tr>
+		<tr>
+			<td><a href="formula1_pilotes_alpine.html">19</a></td>
+			<td><a href="formula1_pilotes_alpine.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAMAAAApQEceAAAAFVBMVEX///8AJlTOESYAD0l1fJDddnzMAA+H1ew7AAAAiUlEQVR4nO3PRxEAIAADsDL9S0ZEf1ziIBmttVM7d7YiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiLyaeQBbt9uqjGyZV0AAAAASUVORK5CYII=" width=20px/> P. Gasly</a></td>
+			<td><a href="formula1_pilotes_alpine.html">Alpine</a></td>
+			<td class = center><a href="formula1_pilotes_alpine.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_alpine.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_alpine.html">0</a></td>
+		</tr>
+		<tr>
+			<td><a href="formula1_pilotes_kicksauber.html">20</a></td>
+			<td><a href="formula1_pilotes_kicksauber.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAR8AAACvCAMAAADzNCq+AAAAKlBMVEX///8AL2wAGWK9xNIAFWEAIWbM096HlrEAJ2jQ1+GKmbOXpLpkd5vCydV5lcieAAABmklEQVR4nO3bUY5BQRRF0YdGa8x/uoxgdSq5CWGvCdyq/X+2bdbpZ7fieB6+/+7qY/Wx+lh9rD5WH6uP1cfqY/Wx+lh9rD5WH6uP1cfqY/Wx+lh9rD5WH6uP1cfqY/Wx+lh9rD5WH6uP1cfqY/Wx+lh9rD5WH6uP1cfqY/Wx+lh9rD5WH6uP1cfqY/Wx+lh9rD5WH6uP1cfqY/Wx+lh9rD52Wezz9+oH/+cw63pc6vN7uw8/YNi2n7WW5xlo+P60bfE/36Y+Vh+rj9XH6mP1sfpYfaw+Vh+rj9XH6mP1sfpYfaw+Vh+rj9XH6mP1sfpYfaw+Vh+rj9XH6mP1sfpYfaw+Vh+rj9XH6mP1sfpYfaw+Vh+rj9XH2u9Y+y+bntt93H5wWPtTq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bH6WH2sPlYfq4/Vx+pj9bFP6/MA9Kld9PQj66EAAAAASUVORK5CYII=" width=20px/>V. Bottas</a></td>
+			<td><a href="formula1_pilotes_kicksauber.html">Kick Sauber</a></td>
+			<td class = center><a href="formula1_pilotes_kicksauber.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_kicksauber.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_kicksauber.html">0</a></td>
+		</tr>
+		<tr>
+			<td><a href="formula1_pilotes_williams.html">21</a></td>
+			<td><a href="formula1_pilotes_williams.html"><img src="data:image/png;base64,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" width=20px/> L. Sargeant</a></td>
+			<td><a href="formula1_pilotes_williams.html">Williams</a></td>
+			<td class = center><a href="formula1_pilotes_williams.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_williams.html">0</a></td>
+			<td class = center><a href="formula1_pilotes_williams.html">0</a></td>
+		</tr>
+	</table>
+	</div>
+	<div class="div2">
+	<h1><a href="#" class="a2">MONACO GP</a></h1><h2><a href="#"class="a2">dim 26 mai</a></h2>
+	<img src="https://www.formula1.com/content/dam/fom-website/races/2021/race-listing/Monaco.jpg.img.1024.medium.jpg" class="image"/>
+	
+		<h5></h5>
+		
+		<div class="div1">
+		<div class="divpod">
+		<a href="formula1_pilotes_redbull.html">
+			<img src="https://i.ibb.co/st6Z11F/M-Verstappen.png" alt="M-Verstappen" border="0" class="podium">
+			<h5>1- M. Verstappen</h5>
+			<p><img src="https://i.pinimg.com/originals/00/64/94/006494b5ff737afef05e9976e677c865.png" width="40px"/> Red Bull</p>
+		</a>
+		</div>
+		<div class="divpod">
+		<a href="formula1_pilotes_ferrari.html">
+			<img src="https://i.ibb.co/st6Z11F/M-Verstappen.png" alt="M-Verstappen" border="0" class="podium">
+			<h5>2- C. Leclerc</h5>
+			<p><img src="https://i.pinimg.com/originals/00/64/94/006494b5ff737afef05e9976e677c865.png" width="40px"/> Ferrari</p>
+			</a>
+	</div>		
+		<div class="divpod">
+		<a href="formula1_pilotes_redbull.html">
+			<img src="https://i.ibb.co/st6Z11F/M-Verstappen.png" alt="M-Verstappen" border="0" class="podium">
+			<h5>3- S. Pérez</h5>
+			<p><img src="https://i.pinimg.com/originals/00/64/94/006494b5ff737afef05e9976e677c865.png" width="40px"/> Red Bull</p>
+			</a>
+		</div>
+		</div>
+	
+	</div>
+</div>
+  </body>
+  
+</html>
